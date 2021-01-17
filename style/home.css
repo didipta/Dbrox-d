@@ -1,0 +1,137 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+html {
+    font-size: 16px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family:Poppins,sans-serif;
+}
+
+.Dbrox{
+	font-size:30px;
+	font-family:Ravie,sans-serif;
+	position:absolute;
+	left:20vh;
+	top:5vh;
+	color:#FE7135;
+}
+.info{
+	
+	text-align:center;
+	position:absolute;
+	left:50vh;
+	top:5vh;
+	display:flex;
+	justify-content:space-around;
+	
+}
+
+.info ul{
+	display:inline-flex;
+	list-style:none;
+	color: black;
+}
+.info ul li{
+	margin:10px 20px 30px 40px;
+	
+}
+
+.info ul li a{
+	position: relative;
+	text-decoration:none;
+	color:#000000;
+	font-size:20px;
+}
+.info ul li a:hover{
+	color:#353535;
+	
+}
+.info a:before{
+	content:"";
+	width:0;
+	position:absolute;
+	top:0;
+	border-radius:5px;
+	border-bottom:2vh solid rgba(0,0,0,0.2);
+	transition: all 0.4s linear;
+}
+
+.info a:hover:before{
+	width:5vh;
+}
+.info-1{
+	
+	text-align:center;
+	position:absolute;
+	left:160vh;
+	top:5.5vh;
+	display:flex;
+	justify-content:space-around;
+	
+}
+
+.info-1 ul{
+	display:inline-flex;
+	list-style:none;
+	color: black;
+}
+.info-1 ul li{
+	margin:5px 10px 15px 20px;
+	
+}
+
+.info-1 ul li a{
+	position: relative;
+	text-decoration:none;
+	color:#000000;
+	font-size:20px;
+}
+.info-1 ul li a:hover{
+	color:#353535;
+	
+}
+.col-fashion img{
+	width:40vw;
+	height:50vw;
+	position:absolute;
+	left:10vh;
+	top:17vh;
+}
+.col-fashion h1{
+	font-family:Freestyle Script;
+	position:absolute;
+	left:120vh;
+	top:38vh;
+	font-size:75px;
+	color:#00F3E3;
+}
+.col-fashion p{
+	position:absolute;
+	left:120vh;
+	top:51vh;
+	font-size: 15px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    width:500px;
+    margin: 0 auto;
+    line-height: 2em;
+}
+.col-fashion button{
+	width:25vh;
+	height:8vh;
+	position:absolute;
+	left:140vh;
+	top:63vh;
+	font-size:20px;
+	text-align:center;
+	color:white;
+	background:#000000;
+	
+}
+.col-fashion button:hover{
+	background:white;
+	color:black;
+}
