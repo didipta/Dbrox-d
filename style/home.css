@@ -158,41 +158,46 @@ nav a:hover:before{
 	left:10vw;
 	top:17vh;
 }
-.col-fashion h1{
+.col-fashion-1 {
+	position:absolute;
+	top:-7vw;
+}
+.col-fashion-1 h1{
 	font-family:Freestyle Script;
 	position:absolute;
 	left:55vw;
-	top:20vh;
+	top:30vw;
 	width:50vw;
-	font-size:30px;
+	font-size:6vw;
 	color:#00F3E3;
 }
-.col-fashion p{
+.col-fashion-1 p{
 	position:absolute;
 	left:47vw;
-	top:28vh;
-	font-size: 10px;
+	top:38vw;
+	font-size:1.5vw;
     margin-bottom: 15px;
     text-transform: capitalize;
     margin-top: 10px;
     letter-spacing: 1px;
-    width:50vw;
+    max-width:50vw;
+	height:45vw;
     margin: 0 auto;
     line-height: 2em;
 }
-.col-fashion button{
-	width:15vh;
-	height:5vh;
+.col-fashion-1 button{
+	width:20vw;
+	height:6vw;
 	position:absolute;
 	left:55vw;
-	top:40vh;
-	font-size:10px;
+	top:50vw;
+	font-size:2.5vw;
 	text-align:center;
 	color:white;
 	background:#000000;
 	
 }
-.col-fashion button:hover{
+.col-fashion-1 button:hover{
 	background:white;
 	color:black;
 }
