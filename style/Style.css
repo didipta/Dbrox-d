@@ -244,6 +244,7 @@ boby{
 	height:28vw;
 	position:absolute;
 	left:1vw;
+    
 	
 	
 }
@@ -251,7 +252,7 @@ boby{
 	width:31vw;
 	height:28vw;
 	position:absolute;
-	left:32vw;
+	left:33vw;
 	
 	
 }
@@ -260,7 +261,7 @@ boby{
 	height:28vw;
 	position:absolute;
 	left:65vw;
-
+    
 	
 }
 .c-pic{
@@ -289,31 +290,31 @@ boby{
 	
 }
 .c-1 p {
-	width:22vw;
+	
+	color:#969696;
+	position:absolute;
+	left:11vw;
+	top:21vw;
+	
+}
+.c-2 p{
+	
 	color:#969696;
 	position:absolute;
 	left:7vw;
 	top:21vw;
 	text-align:center;
 }
-.c-2 p{
-	width:22vw;
-	color:#969696;
-	position:absolute;
-	left:5vw;
-	top:21vw;
-	text-align:center;
-}
 .c-3 p{
-	width:22vw;
+	
 	color:#969696;
 	position:absolute;
-	left:6vw;
+	left:10vw;
 	top:21vw;
 	text-align:center;
 }
 .c-1 h2 {
-	width:22vw;
+	
 	color:#3DFFF8;
 	position:absolute;
 	left:8vw;
@@ -321,7 +322,7 @@ boby{
 	
 }
 .c-2 h2{
-	width:22vw;
+	
 	color:#3DFFF8;
 	position:absolute;
 	left:8.5vw;
@@ -330,7 +331,7 @@ boby{
 	
 }
 .c-3 h2{
-	width:22vw;
+	
 	color:#3DFFF8;
 	position:absolute;
 	left:8vw;
@@ -396,6 +397,7 @@ boby{
 	position:absolute;
 	left:1.8vw;
 	top:2vw;
+	
 	
 }
 .u-c-text h1{
