@@ -5,13 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
    <link rel="stylesheet" href="style/Style.css">
+   <link rel="stylesheet" href="style/Style1.css">
    </head>
    <body> 
    
+		 
+		 
+		<div class="col-2">
+		   <figure>
+			    <div class="col-fashion">
+
+					 <img src="img/dress1.png">
+					 
+				        <div class="fashion-1">
+						
+						   <font color=#00F3E3><h1>Daily Standards</h1></font>
+						   
+				           <p>Welcome to Fashion the fashion Contrary to popular belief,
+				            Lorem Ipsum is not simply random text. It has roots in a piece</p>
+							
+				            <a href="#"><button type="button"><b>SHOP NOW</b></button></a>
+							
+				        </div>
+						
+			    </div>
+				
+				<div class="col-fashion-2">
+					<img src="img/dress2.png">
+					
+				   <div class="fashion-2">
+				   
+				        <font color=#32F800><h1 >Royal Collection</h1></font>
+						
+				           <p>Welcome to Fashion the fashion Contrary to popular belief,
+				           Lorem Ipsum is not simply random text. It has roots in a piece</p>
+						   
+				        <a href="#"><button type="button"><b>SHOP NOW</b></button></a>
+						
+				    </div>
+				</div>
+				  
+				  <div class="col-fashion-3">
+					<img src="img/dress4.png">
+					
+				   <div class="fashion-3">
+				   
+				        <font color=#E20AFF><h1 >Woman Fashion</h1></font>
+						
+				           <p>Welcome to Fashion the fashion Contrary to popular belief,
+				           Lorem Ipsum is not simply random text. It has roots in a piece</p>
+						   
+				        <a href="#"><button type="button"><b>SHOP NOW</b></button></a>
+						
+				    </div>
+				</div>
+			</figure>
+		</div>
+		
+		
       <div class="col-1">
 	  
 	  <div class="Dbrox"><h1>Dbrox</h1></div>
 	  
+	       <div class="menu" ></div>
+		   
 	        <nav>
 		        <ul>
 		
@@ -39,60 +96,8 @@
 				</ul>
         </div>
 		   
-         </div>
+         </div> 
 		 
-		 
-		<div class="col-2">
-		   <figure>
-			    <div class="col-fashion">
-
-					 <img src="img/dress1.png">
-					 
-				        <div class="fashion-1">
-						
-						   <font color=#00F3E3><h1>Daily Standards</h1></font>
-						   
-				           <p>Welcome to Fashion the fashion Contrary to popular belief,<br>
-				            Lorem Ipsum is not simply random text. It has roots in a piece</p>
-							
-				            <a href="#"><button type="button"><b>SHOP NOW</b></button></a>
-							
-				        </div>
-						
-			    </div>
-				
-				<div class="col-fashion-2">
-					<img src="img/dress2.png">
-					
-				   <div class="fashion-2">
-				   
-				        <font color=#32F800><h1 >Royal Collection</h1></font>
-						
-				           <p>Welcome to Fashion the fashion Contrary to popular belief,<br>
-				           Lorem Ipsum is not simply random text. It has roots in a piece</p>
-						   
-				        <a href="#"><button type="button"><b>SHOP NOW</b></button></a>
-						
-				    </div>
-				</div>
-				  
-				  <div class="col-fashion-3">
-					<img src="img/dress4.png">
-					
-				   <div class="fashion-3">
-				   
-				        <font color=#E20AFF><h1 >Woman Fashion</h1></font>
-						
-				           <p>Welcome to Fashion the fashion Contrary to popular belief,<br>
-				           Lorem Ipsum is not simply random text. It has roots in a piece</p>
-						   
-				        <a href="#"><button type="button"><b>SHOP NOW</b></button></a>
-						
-				    </div>
-				</div>
-			</figure>
-		</div>
-		
 		<div class="collection">
 		
 		      <div class="c-1">
@@ -187,7 +192,27 @@
 				</div>
 		
 		</div>
+		
+		<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+ 
+        <script type="text/javascript">
+
+              $(document).ready(function(){
+              $('.menu').click(function(){
+             $('.col-1 nav').toggleClass('active')
+              $('.menu').toggleClass('active')
+             })
+             })
+  
+              $(document).ready(function(){
+              $('.menu-bar').click(function(){
+             $('.menu-2').toggleClass('active')
+               })
+              })
+  
+	    </script>
     </body>
+	
 
 	</html>
    
