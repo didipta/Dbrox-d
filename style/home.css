@@ -531,7 +531,7 @@ boby{
 	
 }
 .menu{
-	display:block;
+	display:flex;
 	width:40px;
 	height:40px;
 	margin:10px;
@@ -556,7 +556,7 @@ nav{
 nav.active{
 	display:block;
 	width:60vw;
-	background:white;
+	background:black;
 	position:absolute;
 	left:50vw;
 	top:15vh;

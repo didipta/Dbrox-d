@@ -20,11 +20,15 @@ boby{
 	
 	
 	
-}	
+}
+.menu{
+	display:none;
+}
 .col-1{
 	position:absolute;
 	left:-5vw;
 	top:0vh;
+	display:fixed;
 }
 .col-1 nav{
 	text-align:center;
@@ -41,6 +45,7 @@ boby{
 	list-style:none;
 	color: black;
 	width:50vw;
+	
 	
 }
 .col-1 nav ul li{
@@ -161,6 +166,7 @@ boby{
 	top:10vw;
 	width:50vw;
 	height:15vw;
+	display:fixed;
 	
 	
 	
@@ -170,8 +176,9 @@ boby{
 	position:absolute;
 	left:0vw;
 	top:0vw;
-	width:27vw;
+	width:35vw;
 	font-size:70px;
+	
 	
 	
 }
@@ -186,6 +193,8 @@ boby{
     width:35vw;
     margin: 0 auto;
     line-height: 2em;
+	display:fixed;
+	
 	
 }
 .fashion-1 button , .fashion-2 button , .fashion-3 button{
@@ -210,6 +219,7 @@ boby{
 	position:relative;
 	left:0vw;
 	animation: 10s line infinite linear;
+	display:fixed;
 	
 	
 	
@@ -383,7 +393,7 @@ boby{
 	
 }
 .u-c-text{
-	width:25vw;
+	width:26vw;
 	height:10vw;
 	background:white;
 	position:absolute;
