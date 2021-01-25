@@ -33,44 +33,10 @@
 	top:4vw;
 }	
 }
-@media screen and (max-width:920px)
-{
-	
-	html {
-    font-size: 10px;
-}
-.fashion-1 h1 , .fashion-2 h1 , .fashion-3 h1{
-	font-family:Freestyle Script;
-	position:absolute;
-	left:0vw;
-	top:0vw;
-	width:35vw;
-	font-size:40px;
-	
-	
-}
-.c-1 button , .c-2 button , .c-3 button {
-	font-size:7px;
-}
-.u-c-text h2{
-	width:35vw;
-	letter-spacing: 10px;
-	position:absolute;
-	left:1.5vw;
-	top:2vw;
-	
-	
-}
-.u-c-text h1{
-	font-size:25px;
-	position:absolute;
-	left:3vw;
-	top:4vw;
-}
-}
 
 
-@media screen and (max-width:700px)
+
+@media screen and (max-width:890px)
 {
 	html {
     font-size: 11px;
@@ -100,7 +66,7 @@
 	width:30vw;
 	position:absolute;
 	left:70vw;
-	top:8vw;
+	top:7.5vw;
 	color:white;
 	font-size:20px;
 	
@@ -120,26 +86,24 @@
 	margin:4vw 2vw 3vw 1vw;
 	
 }
-.menu{
+.col-1 .menu{
 	display:flex;
-	width:40px;
-	height:40px;
-	margin:10px;
+	margin:1vw 2vw 2vw 4vw;
 	float:right;
 	cursor:pointer;
 	text-align:center;
 	color:black;
-	font-size:25px;
+	font-size:3vw;
 	position:absolute;
 	left:90vw;
-	top:-3vw;
+	top:-1vw;
 }
-.menu:before{
+.col-1 .menu:before{
 	content:'\f0c9';
 	font-family:fontAwesome;
 	line-height:80px;
 }
-.menu.active:before{
+.col-1 .menu.active:before{
 	content:'\f00d';
 
 }
@@ -182,7 +146,7 @@
 	left:0vw;
 	top:0vw;
 	width:40vw;
-	font-size:50px;
+	font-size:7vw;
 	
 	
 	
@@ -199,7 +163,7 @@
     margin: 0 auto;
     line-height: 2em;
 	display:fixed;
-	font-size:10px;
+	font-size:1.5vw;
 	
 }
 .fashion-1 button , .fashion-2 button , .fashion-3 button{
@@ -229,5 +193,22 @@
 	left:0vw;
 	top:85vw;
 	display:none;
+}
+}
+
+
+@media screen and (max-width:420px)
+{
+	.col-1 .menu{
+	display:flex;
+	margin:1vw 2vw 2vw 4vw;
+	float:right;
+	cursor:pointer;
+	text-align:center;
+	color:black;
+	font-size:3vw;
+	position:absolute;
+	left:90vw;
+	top:-6vw;
 }
 }
