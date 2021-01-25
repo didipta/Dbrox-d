@@ -197,7 +197,7 @@
 }
 
 
-@media screen and (max-width:420px)
+@media screen and (max-width:768px)
 {
 	.col-1 .menu{
 	display:flex;
@@ -207,6 +207,21 @@
 	text-align:center;
 	color:black;
 	font-size:3vw;
+	position:absolute;
+	left:90vw;
+	top:-3vw;
+}
+
+@media screen and (max-width:600px)
+{
+	.col-1 .menu{
+	display:flex;
+	margin:1vw;
+	float:right;
+	cursor:pointer;
+	text-align:center;
+	color:black;
+	font-size:3.5vw;
 	position:absolute;
 	left:90vw;
 	top:-6vw;
