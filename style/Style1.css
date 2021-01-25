@@ -86,24 +86,16 @@
 	margin:4vw 2vw 3vw 1vw;
 	
 }
-.col-1 .menu{
+.menu{
 	display:flex;
-	margin:1vw 2vw 2vw 4vw;
-	float:right;
-	cursor:pointer;
-	text-align:center;
 	color:black;
-	font-size:3vw;
-	position:absolute;
-	left:90vw;
-	top:-1vw;
 }
-.col-1 .menu:before{
+.menu:before{
 	content:'\f0c9';
 	font-family:fontAwesome;
-	line-height:80px;
+	line-height:3vw;
 }
-.col-1 .menu.active:before{
+.menu.active:before{
 	content:'\f00d';
 
 }
@@ -141,12 +133,12 @@
 	top:5vw;
 }
 .fashion-1 h1 , .fashion-2 h1 , .fashion-3 h1{
-	font-family:Freestyle Script;
+	font-family:Times New Roman;
 	position:absolute;
 	left:0vw;
-	top:0vw;
+	top:2vw;
 	width:40vw;
-	font-size:7vw;
+	font-size:5vw;
 	
 	
 	
@@ -199,31 +191,29 @@
 
 @media screen and (max-width:768px)
 {
-	.col-1 .menu{
-	display:flex;
-	margin:1vw 2vw 2vw 4vw;
-	float:right;
-	cursor:pointer;
-	text-align:center;
-	color:black;
-	font-size:3vw;
-	position:absolute;
-	left:90vw;
-	top:-3vw;
+	* {
+    margin: 0;
+    padding: 0;
+    font-family:Times New Roman,sans-serif;
 }
-
-@media screen and (max-width:600px)
-{
-	.col-1 .menu{
+ .menu{
 	display:flex;
 	margin:1vw;
 	float:right;
 	cursor:pointer;
 	text-align:center;
 	color:black;
-	font-size:3.5vw;
-	position:absolute;
-	left:90vw;
-	top:-6vw;
+ }
+
+@media screen and (max-width:600px)
+{
+	.menu{
+	display:flex;
+	margin:1vw;
+	float:right;
+	cursor:pointer;
+	text-align:center;
+	color:black;
+	
 }
 }
