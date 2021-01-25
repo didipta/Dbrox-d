@@ -159,11 +159,11 @@
 	
 }
 .fashion-1 button , .fashion-2 button , .fashion-3 button{
-	width:12vw;
+	width:15vw;
 	height:4vw;
 	position:absolute;
 	top:21vw;
-	font-size:10px;
+	font-size:1.5vw;
 	text-align:center;
 	color:white;
 	background:#000000;
