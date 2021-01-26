@@ -42,11 +42,11 @@
     font-size: 11px;
 }
 .Dbrox h1{
-	font-size:4vw;
+	font-size:5vw;
 	font-family:Ravie,sans-serif;
 	position:absolute;
 	left:13vw;
-	top:2vw;
+	top:1vw;
 	color:#FE7135;	
 }
 .col-1 nav{
@@ -76,7 +76,7 @@
 	display:block;
 }
 .col-1 nav.active ul li a{
-	font-size:2vw;
+	font-size:2.5vw;
 	text-align:center;
 	
 	
@@ -93,7 +93,6 @@
 .menu:before{
 	content:'\f0c9';
 	font-family:fontAwesome;
-	line-height:3vw;
 }
 .menu.active:before{
 	content:'\f00d';
@@ -116,7 +115,7 @@
 	position: relative;
 	text-decoration:none;
 	color:#000000;
-	font-size:3vw;
+	font-size:3.5vw;
 	
 }
 .info-1 ul li{
@@ -126,19 +125,39 @@
 }
 .col-2{
 	overflow:hidden;
-	height:50vw;
+	height:90vw;
 	width:100vw;
 	position:absolute;
 	left:0vh;
-	top:5vw;
+	top:7vw;
+}
+.col-fashion img ,.col-fashion-2 img ,.col-fashion-3 img{
+	width:70vw;
+	height:50vw;
+	position:absolute;
+	left:15vw;
+	top:0vw;
+	display:fixed;
+	
+}
+.fashion-1 , .fashion-2 , .fashion-3{
+	position:absolute;
+	left:25vw;
+	top:49vw;
+	width:50vw;
+	height:15vw;
+	display:fixed;
+	
+	
+	
+	
 }
 .fashion-1 h1 , .fashion-2 h1 , .fashion-3 h1{
-	font-family:Times New Roman;
 	position:absolute;
 	left:0vw;
 	top:2vw;
-	width:45vw;
-	font-size:5vw;
+	width:50vw;
+	font-size:10vw;
 	
 	
 	
@@ -146,24 +165,25 @@
 .fashion-1 p , .fashion-2 p , .fashion-3 p{
 	position:absolute;
 	left:0vw;
-	top:10vw;
+	top:14vw;
     margin-bottom: 5px;
     text-transform: capitalize;
     margin-top: 5px;
     letter-spacing: .5px;
-    width:40vw;
+    width:55vw;
     margin: 0 auto;
     line-height: 2em;
 	display:fixed;
-	font-size:1.5vw;
+	font-size:2vw;
 	
 }
 .fashion-1 button , .fashion-2 button , .fashion-3 button{
-	width:15vw;
-	height:4vw;
+	width:20vw;
+	height:6vw;
 	position:absolute;
-	top:21vw;
-	font-size:1.5vw;
+	top:27vw;
+	left:13vw;
+	font-size:2.5vw;
 	text-align:center;
 	color:white;
 	background:#000000;
@@ -185,35 +205,5 @@
 	left:0vw;
 	top:85vw;
 	display:none;
-}
-}
-
-
-@media screen and (max-width:768px)
-{
-	* {
-    margin: 0;
-    padding: 0;
-    font-family:Times New Roman,sans-serif;
-}
- .menu{
-	display:flex;
-	margin:1vw;
-	float:right;
-	cursor:pointer;
-	text-align:center;
-	color:black;
- }
-
-@media screen and (max-width:600px)
-{
-	.menu{
-	display:flex;
-	margin:1vw;
-	float:right;
-	cursor:pointer;
-	text-align:center;
-	color:black;
-	
 }
 }
