@@ -29,6 +29,7 @@ boby{
 	left:-5vw;
 	top:0vh;
 	display:fixed;
+	
 }
 .col-1 nav{
 	text-align:center;
@@ -194,7 +195,7 @@ boby{
     margin: 0 auto;
     line-height: 2em;
 	display:fixed;
-	
+	 font-size: 1vw;
 	
 }
 .fashion-1 button , .fashion-2 button , .fashion-3 button{
@@ -202,7 +203,7 @@ boby{
 	height:3vw;
 	position:absolute;
 	top:11.6vw;
-	font-size:10px;
+	font-size:.8vw;
 	text-align:center;
 	color:white;
 	background:#000000;
@@ -354,7 +355,7 @@ boby{
 	position:absolute;
 	top:25.5vw;
 	left:11.5vw;
-	font-size:9px;
+	font-size:.8vw;
 	text-align:center;
 	color:white;
 	background:#000000;
@@ -416,10 +417,14 @@ boby{
 	left:3vw;
 	top:4vw;
 }
+.u-c{
+	position:absolute;
+	top:5vw;
+}
 .NEW-COLLECTION {
 	
 	position:absolute;
-	left:45vw;
+	left:42vw;
 	top:5vw;
 	height: 10vw;
      width:15vw;
@@ -430,54 +435,104 @@ boby{
 .NEW-COLLECTION-2 {
 	
 	position:absolute;
-	left:67vw;
+	left:60vw;
 	top:5vw;
 	height: 10vw;
      width:15vw;
 	
 	
 }
-.NEW-COLLECTION a , .NEW-COLLECTION-2 a {
+.NEW-COLLECTION-3 {
+	
+	position:absolute;
+	left:78vw;
+	top:5vw;
+	height: 10vw;
+     width:15vw;
+	
+	
+}
+.NEW-COLLECTION-4 {
+	
+	position:absolute;
+	left:2vw;
+	top:5vw;
+	height: 10vw;
+     width:15vw;
+	
+	
+}
+.NEW-COLLECTION-5 {
+	
+	position:absolute;
+	left:22vw;
+	top:5vw;
+	height: 10vw;
+    width:15vw;
+	
+	
+}
+.NEW-COLLECTION a , .NEW-COLLECTION-2 a , .NEW-COLLECTION-3 a ,.NEW-COLLECTION-4 a ,.NEW-COLLECTION-5 a{
             float: left;
             position: relative;
         }
 
 .NEW-COLLECTION .card {
-           background-image: url(img/dress1.png);
-		    height:25vw;
-            width:20vw;
+           background-image: url(https://cdn.shopify.com/s/files/1/0424/2394/3322/products/25_1024x1024.jpg?v=1595686805);
+		    height:20vw;
+            width:15vw;
             background-size: cover;
 			overflow: hidden;
 }
  .NEW-COLLECTION-2 .card {
-           background-image: url(img/dress1.png);
-		    height:25vw;
-            width:20vw;
+           background-image: url(https://cdn.shopify.com/s/files/1/0424/2394/3322/products/4_5fe0d1ea-ecc0-4042-9fc2-bb802f1bbe3b_340x555.jpg?v=1595686661);
+		    height:20vw;
+            width:15vw;
+            background-size: cover;
+			overflow: hidden;
+}
+ .NEW-COLLECTION-3 .card {
+           background-image: url(https://cdn.shopify.com/s/files/1/0424/2394/3322/products/2_1a42e053-e17d-46d9-8ab0-cde70f25a17e_1024x1024.jpg?v=1595686512);
+		    height:20vw;
+            width:15vw;
+            background-size: cover;
+			overflow: hidden;
+}
+ .NEW-COLLECTION-4 .card {
+           background-image: url(https://cdn.shopify.com/s/files/1/0424/2394/3322/products/3_bea99dea-183b-42b5-8079-bb2cf9f36df7_340x555.jpg?v=1595686512);
+		    height:20vw;
+            width:15vw;
+            background-size: cover;
+			overflow: hidden;
+}
+ .NEW-COLLECTION-5 .card {
+           background-image: url(https://cdn.shopify.com/s/files/1/0424/2394/3322/products/10_1024x1024.jpg?v=1595686661);
+		    height:20vw;
+            width:15vw;
             background-size: cover;
 			overflow: hidden;
 }
 .inner-image {
-	        height: 25vw;
-            width:20vw;
+	        height: 20vw;
+            width:15vw;
             transform: scale(1.2);
             opacity: 0;
             transition: all .2s ease-in;
         }
-.NEW-COLLECTION a:hover .inner-image , .NEW-COLLECTION-2 a:hover .inner-image {
+.NEW-COLLECTION a:hover .inner-image , .NEW-COLLECTION-2 a:hover .inner-image , .NEW-COLLECTION-3 a:hover .inner-image ,.NEW-COLLECTION-4 a:hover .inner-image ,.NEW-COLLECTION-5 a:hover .inner-image{
             opacity: 1;
             transform: scale(1);
         }
-.NEW-COLLECTION    a:hover .card_buttons , .NEW-COLLECTION-2 a:hover .card_buttons {
+.NEW-COLLECTION    a:hover .card_buttons , .NEW-COLLECTION-2 a:hover .card_buttons ,.NEW-COLLECTION-3 a:hover .card_buttons ,.NEW-COLLECTION-4 a:hover .card_buttons ,.NEW-COLLECTION-5 a:hover .card_buttons{
             opacity: 1;
-            bottom: 80px;
+            bottom:0vw;
         }
 		.card_buttons {
-            height: 70px;
-            width: 80%;
+            height: 10vw;
+            width: 13vw;
             position: absolute;
-            left: 50%;
-            bottom: 70px;
-            transform: translateX(-50%);
+            left:1vw;
+            bottom:0vw;
             z-index: 2;
             display: flex;
             justify-content: space-around;
@@ -486,10 +541,321 @@ boby{
             animation: slide-in .3s east-out;
             transition: all .3s ease-out;
         }
-    .NEW-COLLECTION    i , .NEW-COLLECTION-2    i {
-            background-color: white;
-            font-size: 35px;
-            color: black;
-            border-radius: 5px;
-            padding: 5px;
+		.new {
+			background-color:#D5FF00;
+            font-size: 1vw;
+            color: #000000;
+			height: 1vw;
+            width: 3vw;
+            position: absolute;
+            left:1vw;
+			top:0vw;
+			text-align:center;
+		
+		}
+		.offer {
+			background-color:#494CF7;
+            font-size: 1vw;
+            color: #FFFFFF;
+			height: 1vw;
+            width: 3vw;
+            position: absolute;
+            left:12vw;
+			top:0vw;
+			text-align:center;
+		
+		}
+		
+		.NEW-COLLECTION-2 .details i ,.NEW-COLLECTION .details i,.NEW-COLLECTION-3 .details i ,.NEW-COLLECTION-4 .details i ,.NEW-COLLECTION-5 .details i{
+			background-color: white;
+			padding:.05vw;
+			color: #000000;
+			font-size:.7vw;
+		}
+		.NEW-COLLECTION-2 .details p a ,.NEW-COLLECTION .details p a,.NEW-COLLECTION-3 .details p a ,.NEW-COLLECTION-4 .details p a ,.NEW-COLLECTION-5 .details p a{
+			color: #AFAFAF;
+			font-size:1vw;
+			text-decoration:none;
+		}
+		.NEW-COLLECTION-2 .details h5,.NEW-COLLECTION .details h5,.NEW-COLLECTION-3 .details h5 ,.NEW-COLLECTION-4 .details h5 ,.NEW-COLLECTION-5 .details h5{
+			color: #000000;
+			font-size:1.1vw;
+		}
+		.NEW-COLLECTION-2 .details h6,.NEW-COLLECTION .details h6,.NEW-COLLECTION-3 .details h6,.NEW-COLLECTION-4 .details h6 ,.NEW-COLLECTION-5 .details h6{
+			color: #C0C0C7;
+			font-size:.9vw;
+			position: absolute;
+            left:2vw;
+			top:2.7vw;
+			text-decoration:line-through;
+		}
+		.NEW-COLLECTION-2 .details ,.NEW-COLLECTION .details ,.NEW-COLLECTION-3 .details ,.NEW-COLLECTION-4 .details,.NEW-COLLECTION-5 .details{
+			background-color: white;
+			 position: absolute;
+			 
+            left:3vw;
+			top:20.5vw;
+		}
+    .NEW-COLLECTION i , .NEW-COLLECTION-2 i ,.NEW-COLLECTION-3 i ,.NEW-COLLECTION-4 i ,.NEW-COLLECTION-5 i {
+            background-color: #C4C3C3;
+            font-size: 1vw;
+            color: #757575;
+            border-radius: .5vw;
+            padding: .5vw;
         }
+		.Sale-Collections{
+	width:98vw;
+	height:40vw;
+	position:absolute;
+	left:0vw;
+	top:130vw;
+	
+}
+.Sale-Collections h3{
+	font-family:Kunstler Script;
+	font-size:2vw;
+	position:absolute;
+	left:50vw;
+	top:-2vw;
+}
+.Sale-Collections h1{
+	position:absolute;
+	left:45vw;
+	top:1vw;
+}
+
+.Up-button a i{
+     font-size:3vw;
+     color:black;
+     text-decoration:none;
+	
+}
+.Up-button {
+     font-size:3vw;
+     color:black;
+     text-decoration:none;
+     position:fixed;
+	right:0vw;
+	top:43vw;
+	
+}
+.menu-2{
+	display:none;
+}
+.menu-2.active{
+	display:block;
+	width:17vw;
+     height:100vw;
+	background:white;
+	position:absolute;
+	left:5vw;
+	top:2vw;
+	font-size:2vw;
+	
+}
+.menu-2 ul{
+	display:block;
+	list-style:none;
+	color: white;
+	position: absolute;
+	top:5vw;
+	
+}
+.menu-2 ul li{
+	margin:2vw 2vw 2vw 2vw;
+
+	
+}
+
+.menu-2 ul li a{
+	position: relative;
+	text-decoration:none;
+	color:#000000;
+	font-size:1vw;
+	
+}
+.menu-2 ul li a:hover{
+	color:#353535;
+	
+}
+
+.Back a{
+	text-decoration:none;
+	color:#000000;
+	font-size:1vw;
+	position:absolute;
+	
+}
+
+.menu-bar{
+	position:absolute;
+	left:27vw;
+	top:3vw;
+	font-size:1.4vw;
+	cursor:pointer;
+	
+}
+
+
+
+
+.Best{
+	width:95vw;
+	position:absolute;
+	left:-2vw;
+	top:160vw;
+	
+	
+}
+.Best-Deals-pic{
+	width:30vw;
+	height:35vw;
+	position:absolute;
+	left:15vw;
+	top:0vh;
+	overflow:hidden;
+	
+}
+.Best-Deals1-pic img{
+	width:30vw;
+	height:35vw;
+	position:relative;
+	
+	
+}
+.Best-Deals1-pic img:hover{
+	transform:scale(1.2,1.2);
+	transition:2s transform;
+}
+.time{
+	
+	position:absolute;
+	left:60.5vw;
+	top:15vw;
+	
+}
+.time ul{
+	display:flex;
+	list-style:none;
+	color: black;
+	font-family:Californian FB;
+	
+}
+.time ul li{
+	font-size:2.4vw;
+	margin:2vw 3.1vw 1vw 2vw;
+	font-family:Californian FB;
+	
+	
+	
+}
+.time table{
+	font-size:.95vw;
+	width:37vw;
+	position:absolute;
+	left:0vw;
+	top:5vw;
+	
+
+}
+.time table td{
+	background:;
+	display:inline-flex;
+	list-style:none;
+}
+.time table td{
+	margin:2vw 1.3vw 1vw 1.5vw;
+	padding-right:0.7vw;
+	padding-left:1vw;
+		
+}
+
+.Best-Deals h1{
+	position:absolute;
+	left:64vw;
+	top:12vw;
+	font-size:2vw;
+	
+}
+.Best-Deals h2{
+	padding-bottom: 30px;
+    position:absolute;
+	left:67vw;
+	top:8vw;
+    font-family:Vladimir Script;
+    font-size: 2vw;
+    font-weight: 700;
+	transform:skew(10deg) rotate(-7deg);
+	
+}
+.Best-Deals button{
+	width:10vw;
+	height:3vw;
+	position:absolute;
+	left:74vw;
+	top:27vw;
+	font-size:15px;
+	text-align:center;
+	color:white;
+	background:#000000;
+	
+}
+.Best-Deals button:hover{
+	background:white;
+	color:black;
+}
+.Trading-offer-sale{
+	width:97vw;
+	position:absolute;
+	top:200vw;
+	
+}
+.Trading-offer-sale img{
+	width:45vw;
+}
+.Trading-offer-sale h4{
+	position:absolute;
+	left:60vw;
+	top:8vw;
+}
+.Trading-offer-sale h1{
+	font-family:Freestyle Script;
+	position:absolute;
+	left:57vw;
+	top:10vw;
+	font-size:3.5vw;
+}
+.Trading-offer-sale p{
+	
+	position:absolute;
+	left:57vw;
+	top:15vw;
+
+}
+.Trading-offer-sale button{
+	
+	width:10vw;
+	height:3vw;
+	position:absolute;
+	left:63vw;
+	top:18vw;
+	font-size:15px;
+	text-align:center;
+	color:white;
+	background:#000000;
+
+}
+.Trading-offer-sale button:hover{
+	background:white;
+	color:black;
+}
+.NEW-ARRIVAL{
+	position:absolute;
+	left:3vw;
+	top:240vw;
+}
+.NEW-ARRIVAL img{
+	
+	width:20vw;
+	margin:3vw 1.5vw 2vw 1.5vw;
+}
