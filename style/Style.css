@@ -1,6 +1,7 @@
 @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 html {
     font-size: 16px;
+	scroll-behavior:smooth;
 }
 * {
     margin: 0;
@@ -34,15 +35,14 @@ boby{
 .col-1 nav{
 	text-align:center;
 	position:absolute;
-	left:30vw;
+	left:32vw;
 	top:2vw;
-	display:flex;
 	justify-content:space-around;
 	
 	
 }
 .col-1 nav ul{
-	display:inline-flex;
+	
 	list-style:none;
 	color: black;
 	width:50vw;
@@ -51,13 +51,16 @@ boby{
 }
 .col-1 nav ul li{
 	margin:1vw 2vw 2vw 1.5vw;
-	
+	display:inline-block;
+	float:left;
+
 }
 .col-1 nav ul li a{
 	position: relative;
 	text-decoration:none;
 	color:#000000;
 	font-size:1vw;
+	line-height:1vw;
 	
 	
 }
@@ -78,6 +81,41 @@ boby{
 .col-1 nav a:hover:before{
 	width:4vw;
 }
+
+.col-1 nav ul ul{
+	
+	position:absolute;
+	top:2vw;
+	opacity:0;
+	visibility:hidden;
+	transition:top .3s;
+
+	
+}
+
+.col-1 nav ul li:hover > ul{
+	
+	opacity:1;
+	visibility:visible;
+
+	
+}
+.col-1 nav ul ul li{
+	background:white;
+	position:relative;
+	margin:1vw;
+	margin-left:0vw;
+	float:none;
+	width:15vw;
+	display:list-item;
+}
+
+.
+.col-1 nav ul ul li a{
+	color:#545454;
+	font-size:1vw;
+}
+
 .info-1 {
 	
 	text-align:center;
@@ -129,7 +167,7 @@ boby{
 	height:100vw;
 	position:absolute;
 	left:0vw;
-	top:5vw;
+	top:0vw;
 	display:fixed;
 	
 	
@@ -139,7 +177,7 @@ boby{
 	height:100vw;
 	position:absolute;
 	left:100vw;
-	top:5vw;
+	top:0vw;
 	display:fixed;
 	
 }
@@ -148,23 +186,24 @@ boby{
 	height:100vw;
 	position:absolute;
 	left:200vw;
-	top:5vw;
+	top:0vw;
 	display:fixed;
 	
 }
 .col-fashion img ,.col-fashion-2 img ,.col-fashion-3 img{
-	width:50vw;
+	width:100vw;
 	height:50vw;
 	position:absolute;
 	left:0vw;
 	top:0vw;
 	display:fixed;
 	
+	
 }
-.fashion-1 , .fashion-2 , .fashion-3{
+.fashion-1{
 	position:absolute;
 	left:55vw;
-	top:10vw;
+	top:15vw;
 	width:50vw;
 	height:15vw;
 	display:fixed;
@@ -172,6 +211,15 @@ boby{
 	
 	
 }
+.fashion-2 , .fashion-3{
+	position:absolute;
+	left:10vw;
+	top:15vw;
+	width:50vw;
+	height:15vw;
+	display:fixed;
+}
+
 .fashion-1 h1 , .fashion-2 h1 , .fashion-3 h1{
 	font-family:Freestyle Script;
 	position:absolute;
@@ -213,18 +261,24 @@ boby{
 	background:white;
 	color:black;
 }
+
+
+
 .col-2 figure {
 	float:left;
-	width:100vw;
-	height:100vw;
+	width:98vw;
+	height:80vw;
 	position:relative;
 	left:0vw;
 	animation: 10s line infinite linear;
 	display:fixed;
+   
 	
 	
 	
 }
+
+
 @keyframes line{
 	20%{
 		left:-0vw;
@@ -584,17 +638,16 @@ boby{
 		.NEW-COLLECTION-2 .details h6,.NEW-COLLECTION .details h6,.NEW-COLLECTION-3 .details h6,.NEW-COLLECTION-4 .details h6 ,.NEW-COLLECTION-5 .details h6{
 			color: #C0C0C7;
 			font-size:.9vw;
-			position: absolute;
-            left:2vw;
-			top:2.7vw;
-			text-decoration:line-through;
+			text-decoration:line-through; 
+		
 		}
 		.NEW-COLLECTION-2 .details ,.NEW-COLLECTION .details ,.NEW-COLLECTION-3 .details ,.NEW-COLLECTION-4 .details,.NEW-COLLECTION-5 .details{
 			background-color: white;
 			 position: absolute;
-			 
+			
             left:3vw;
 			top:20.5vw;
+			width:15vw;
 		}
     .NEW-COLLECTION i , .NEW-COLLECTION-2 i ,.NEW-COLLECTION-3 i ,.NEW-COLLECTION-4 i ,.NEW-COLLECTION-5 i {
             background-color: #C4C3C3;
@@ -624,7 +677,7 @@ boby{
 	top:1vw;
 }
 
-.Up-button a i{
+.Up-button a {
      font-size:3vw;
      color:black;
      text-decoration:none;
@@ -703,7 +756,7 @@ boby{
 	width:95vw;
 	position:absolute;
 	left:-2vw;
-	top:160vw;
+	top:163vw;
 	
 	
 }
@@ -806,30 +859,37 @@ boby{
 }
 .Trading-offer-sale{
 	width:97vw;
+	height:40vw;
 	position:absolute;
 	top:200vw;
-	
+	left:1.5vw;
+	overflow:hidden;
 }
 .Trading-offer-sale img{
-	width:45vw;
+	width:100vw;
+	height:50vw;
+	position:absolute;
+	top:-4vw;
 }
 .Trading-offer-sale h4{
 	position:absolute;
 	left:60vw;
 	top:8vw;
+	font-size:1.5vw;
+	font-family:'Dancing Script', cursive;
 }
 .Trading-offer-sale h1{
 	font-family:Freestyle Script;
 	position:absolute;
 	left:57vw;
 	top:10vw;
-	font-size:3.5vw;
+	font-size:6vw;
 }
 .Trading-offer-sale p{
 	
 	position:absolute;
 	left:57vw;
-	top:15vw;
+	top:17vw;
 
 }
 .Trading-offer-sale button{
@@ -838,7 +898,7 @@ boby{
 	height:3vw;
 	position:absolute;
 	left:63vw;
-	top:18vw;
+	top:20vw;
 	font-size:15px;
 	text-align:center;
 	color:white;
@@ -849,13 +909,159 @@ boby{
 	background:white;
 	color:black;
 }
-.NEW-ARRIVAL{
+.NEW-ARRIVAL {
+	width:98vw;
 	position:absolute;
-	left:3vw;
-	top:240vw;
-}
-.NEW-ARRIVAL img{
+	left:.5vw;
+	top:245vw;
 	
-	width:20vw;
-	margin:3vw 1.5vw 2vw 1.5vw;
+	
+}
+.NEW-ARRIVAL h5{
+	font-family:Kunstler Script;
+	position:absolute;
+	left:40vw;
+	top:-2vw;
+	font-size:2vw;
+}
+.NEW-ARRIVAL h1{
+	position:absolute;
+	left:37vw;
+	font-size:3vw;
+}
+.NEW-ARRIVAL .N-A-p {
+	width:25vw;
+	height:17vw;
+	overflow:hidden;
+	margin:5vw 3vw 2vw 3vw;
+	display:inline-block;
+}
+.NEW-ARRIVAL .N-A-p img{
+	width:25vw;
+	position:relative;
+}
+
+.N-A-p img:hover{
+	transform: scale(1.1);
+	transition:2s transform;
+	
+	
+}
+.NEW-ARRIVAL .N-A-p h3{
+	width:7vw;
+	height:3vw;
+	position:absolute;
+	top:12vw;
+	margin-left:10vw;
+	background:white;
+	text-align:center;
+	padding-top:1vw;
+	font-size:2vw;
+}
+.searchtext{
+	border:none;
+	background:none;
+	outline:none;
+	float:left;
+	padding:1vw;
+	color:black;
+	line-height:2vw;
+	width:18vw;
+	height:1vw;
+	display:none;
+
+}
+
+.searching{
+	background:#B5B5B5;
+	width:18vw;
+	position:absolute;
+	top:4vw;
+}
+
+.searchtext.active{
+	
+	display:block;
+}
+.FROM-THE-BLOG{
+	position:absolute;
+	top:272vw;
+}
+.FROM-THE-BLOG h5{
+	font-family:Kunstler Script;
+	position:absolute;
+	left:43vw;
+	top:-2vw;
+	font-size:2vw;
+}
+.FROM-THE-BLOG h1{
+	position:absolute;
+	left:37vw;
+	font-size:2.5vw;
+}
+.FROM-THE-BLOG .F-T-B {
+	width:30vw;
+	height:17vw;
+	overflow:hidden;
+	margin:5vw 1vw 2vw 1vw;
+	display:inline-block;
+}
+
+.FROM-THE-BLOG .F-T-B img{
+	width:30vw;
+	position:relative;
+}
+.F-T-B img:hover{
+	transform: scale(1.1);
+	transition:2s transform;
+	
+	
+}
+.FROM-THE-BLOG .F-T-B .F-T-W {
+	width:25vw;
+	height:10vw;
+	margin-left:2.5vw;
+	 position:absolute;
+	 top:20vw;
+	 background:white;
+}
+.FROM-THE-BLOG .F-T-B .F-T-W p{
+	color:#B5B5B5;
+	text-align:center;
+	 font-size:1vw;
+	margin:1vw;
+}
+.FROM-THE-BLOG .F-T-B .F-T-W h4{
+	width:24vw;
+	color:#120101;
+	 font-size:1vw;
+	margin:2vw 1vw;
+}
+.FROM-THE-BLOG .F-T-B .F-T-W h3{
+	color:#B5B5B5;
+	
+	 font-size:1vw;
+	margin:1vw;
+	margin-left:9vw;
+}
+
+.last-part{
+	width:98vw;
+	height:7vw;
+	 position:absolute;
+	 top:305vw;
+	 background:black;
+	
+}
+.last-part p{
+	color:white;
+	margin:1vw 20vw 2vw 20vw;
+	font-size:.9vw;
+	
+}
+.last-part i{
+	font-size:2vw;
+	color:white;
+	margin:2vw;
+	
 }
